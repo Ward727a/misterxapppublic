@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+
+    <link rel="stylesheet" href="style/base.css"/>
+    <link rel="stylesheet" href="style/index.css">
+    <link rel="stylesheet" href="style/menu.css">
+    <link rel="stylesheet" href="style/modal.css">
+
+    <script>
+        delete window.require;
+        delete window.exports;
+        delete window.module;
+    </script>
+
+    <script type="text/javascript" src="Script/require.js"></script>
+
+    <!-- Font Awesome integration -->
+    <script src="style/fontawesome/js/all.min.js" crossorigin="anonymous"></script>
+
+    <script src="Script/general.js" crossorigin="anonymous"></script>
+
+    <title>MisterX - Connexion</title>
+</head>
+<body>
+
+<div id="containerBody">
+
+    <div class="rowHead">
+
+        <h3>Connexion à votre compte</h3>
+
+    </div>
+
+    <div class="rowCat">
+        <div class="catHead">
+
+            <p>Pour utilisez cet application, veuillez vous connectez à votre compte.<br/><br/><span class="warning">ATTENTION - Si vous vous connectez pour la première fois, le mot de passe que vous écrirez sera votre mot de passe DEFINITIF !</span> </p>
+
+        </div>
+        <div class="catBody">
+            <div class="row">
+                <label for="pseudo">
+                    Votre pseudo :
+                </label>
+                <input type="text" id="pseudo">
+
+            </div>
+            <div class="rowSpace"></div>
+            <div class="row">
+                <label for="pseudo">
+                    Votre mot de passe :
+                </label>
+                <input type="password" id="password">
+
+            </div>
+            <div class="rowSpace"></div>
+            <button onclick="login()">Connexion</button>
+        </div>
+    </div>
+</div>
+
+<script src="Script/index.js"></script>
+<script src="Script/menu.js"></script>
+
+<div include-html="include/modal.html"></div>
+
+<script>
+    includeHTML();
+</script>
+
+</body>
+</html>
